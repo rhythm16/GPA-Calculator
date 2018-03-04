@@ -13,6 +13,7 @@
 		65982F69204BC1370032C520 /* GPA_Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65982F67204BC1370032C520 /* GPA_Calculator.xcdatamodeld */; };
 		65982F6B204BC1370032C520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65982F6A204BC1370032C520 /* Assets.xcassets */; };
 		65982F6E204BC1370032C520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65982F6C204BC1370032C520 /* LaunchScreen.storyboard */; };
+		65982F7A204BC1E70032C520 /* GPACalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65982F79204BC1E70032C520 /* GPACalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		65982F6A204BC1370032C520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65982F6D204BC1370032C520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65982F6F204BC1370032C520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65982F79204BC1E70032C520 /* GPACalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPACalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		65982F5F204BC1370032C520 /* GPA Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				65982F79204BC1E70032C520 /* GPACalculator.swift */,
 				65982F60204BC1370032C520 /* AppDelegate.swift */,
 				65982F62204BC1370032C520 /* ViewController.swift */,
 				65982F64204BC1370032C520 /* Main.storyboard */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65982F7A204BC1E70032C520 /* GPACalculator.swift in Sources */,
 				65982F63204BC1370032C520 /* ViewController.swift in Sources */,
 				65982F61204BC1370032C520 /* AppDelegate.swift in Sources */,
 				65982F69204BC1370032C520 /* GPA_Calculator.xcdatamodeld in Sources */,
