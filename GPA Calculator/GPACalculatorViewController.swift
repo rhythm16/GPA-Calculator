@@ -10,9 +10,23 @@ import UIKit
 
 class GPACalculatorViewController: UIViewController {
     
+    @IBOutlet var subjectCells: [SubjectCellView]! {
+        didSet {
+            subjectCells.forEach { $0.layer.cornerRadius = Constants.cellCornerRadius }
+        }
+    }
+    
     @IBOutlet var rankButtons: [UIButton]!
     @IBOutlet var creditButtons: [UIButton]!
     @IBOutlet weak var topLabel: UILabel!
+    
+    @IBAction func touchRankButton(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func touchCreditButton(_ sender: UIButton) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,5 +45,8 @@ class GPACalculatorViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    struct Constants {
+        static let cellCornerRadius = CGFloat(10)
+    }
 }
