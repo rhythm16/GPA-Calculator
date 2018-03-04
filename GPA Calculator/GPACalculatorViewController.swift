@@ -10,6 +10,7 @@ import UIKit
 
 class GPACalculatorViewController: UIViewController {
     
+    // MARK: - IB stuff
     @IBOutlet var subjectCells: [SubjectCellView]! {
         didSet {
             subjectCells.forEach { $0.layer.cornerRadius = Constants.cellCornerRadius }
@@ -28,11 +29,13 @@ class GPACalculatorViewController: UIViewController {
         print(getTheIndex(of: sender))
     }
     
+    // MARK: - helper funcs
     //use this function carefully
     func getTheIndex(of button: UIButton) -> Int {
         return subjectCells.index(of: (button.superview!.superview!) as! SubjectCellView)!
     }
     
+    // MARK: - VC life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -51,6 +54,7 @@ class GPACalculatorViewController: UIViewController {
     }
     */
     
+    // MARK: - Constants
     struct Constants {
         static let cellCornerRadius = CGFloat(10)
     }
