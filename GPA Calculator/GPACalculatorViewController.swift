@@ -9,7 +9,11 @@
 import UIKit
 
 class GPACalculatorViewController: UIViewController {
-
+    
+    @IBOutlet var rankButtons: [UIButton]!
+    @IBOutlet var creditButtons: [UIButton]!
+    @IBOutlet weak var topLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -18,7 +22,6 @@ class GPACalculatorViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-
     /*
     // MARK: - Navigation
 
