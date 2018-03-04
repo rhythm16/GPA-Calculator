@@ -19,20 +19,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ekg-Ct-dpM">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ekg-Ct-dpM">
                                 <rect key="frame" x="16" y="100" width="343" height="517"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="W9B-pZ-pZ8">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="97"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="91.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Azr-mC-vMg" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="91.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="paG-qX-W48">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTH-nN-cSj">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -43,7 +43,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pT-i6-4yv">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="44.5" width="41" height="37"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -64,13 +64,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M2q-zF-Rky" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="121" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="121" y="0.0" width="101" height="91.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Qqu-wS-oDU">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xm1-GW-72k">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -81,7 +81,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShF-Gj-En5">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="44.5" width="41" height="37"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -102,13 +102,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8q-Xf-5kh" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="242" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="242" y="0.0" width="101" height="91.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xgb-NE-eUB">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6y-G1-0Jh">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -119,7 +119,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BR-bA-A7X">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="44.5" width="41" height="37"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -142,16 +142,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xw2-kR-Epp">
-                                        <rect key="frame" x="0.0" y="105" width="343" height="97"/>
+                                        <rect key="frame" x="0.0" y="106.5" width="343" height="91.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gD-IM-Cnw" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="91.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3E2-rH-HwT">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4e-UX-CZq">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -162,7 +162,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOc-Y1-oNt">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="44.5" width="41" height="37"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -183,13 +183,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyn-zv-e12" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="121" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="121" y="0.0" width="101" height="91.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1E8-6h-DPJ">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXo-Ed-j6e">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -200,7 +200,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aku-sl-LhH">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="44.5" width="41" height="37"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -221,13 +221,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fn-nG-Bcb" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="242" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="242" y="0.0" width="101" height="91.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HTl-i8-6dm">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTf-8K-7xy">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -238,7 +238,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0T-WL-BNx">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="44.5" width="41" height="37"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -261,16 +261,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Rd-wr-ycX">
-                                        <rect key="frame" x="0.0" y="210" width="343" height="97"/>
+                                        <rect key="frame" x="0.0" y="213" width="343" height="91"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbM-FD-QXm" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="91"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4Oe-bl-M4B">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nQ-hm-5Og">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -281,7 +281,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdd-cX-EOV">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="44.5" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -302,13 +302,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v19-v8-Nxz" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="121" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="121" y="0.0" width="101" height="91"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5JL-WG-kQZ">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jz-hW-f4C">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -319,7 +319,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQq-cf-6Uh">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="44.5" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -340,13 +340,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7I-dj-Muz" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="242" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="242" y="0.0" width="101" height="91"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DJF-wy-6K0">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEs-59-gdt">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -357,7 +357,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdM-oS-JkI">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="44.5" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -380,16 +380,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XIo-3t-0fa">
-                                        <rect key="frame" x="0.0" y="315" width="343" height="97"/>
+                                        <rect key="frame" x="0.0" y="319" width="343" height="91.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVk-6E-ulb" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="91.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BeJ-cU-qzW">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQo-mu-cB7">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="37"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -400,7 +400,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZ5-Bx-9xK">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="45" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -421,13 +421,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFA-ts-qa0" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="121" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="121" y="0.0" width="101" height="91.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kMt-qk-bsw">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyQ-jM-0zE">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="37"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -438,7 +438,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utx-1k-TR1">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="45" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -459,13 +459,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Peg-qv-4aR" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="242" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="242" y="0.0" width="101" height="91.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mvJ-KV-1YU">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYj-D5-c0O">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="37"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -476,7 +476,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiK-OC-L20">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="45" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -499,16 +499,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sfZ-xb-MAb">
-                                        <rect key="frame" x="0.0" y="420" width="343" height="97"/>
+                                        <rect key="frame" x="0.0" y="425.5" width="343" height="91.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWF-WC-2n1" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="91.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="btQ-YD-B84">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3n-Wq-9ab">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="37"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -519,7 +519,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoF-wC-EtQ">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="45" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -540,13 +540,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNa-ok-lT1" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="121" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="121" y="0.0" width="101" height="91.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xnC-ht-pct">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gJ-ZA-hk8">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="37"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -557,7 +557,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqz-HJ-DZD">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="45" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -578,13 +578,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcg-VN-gsH" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="242" y="0.0" width="101" height="97"/>
+                                                <rect key="frame" x="242" y="0.0" width="101" height="91.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="E6L-rA-RHM">
-                                                        <rect key="frame" x="30" y="5" width="41" height="87"/>
+                                                        <rect key="frame" x="30" y="5" width="41" height="81.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9s-LB-WEW">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="37"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="F">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -595,7 +595,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdE-Dh-gMj">
-                                                                <rect key="frame" x="0.0" y="47.5" width="41" height="39.5"/>
+                                                                <rect key="frame" x="0.0" y="45" width="41" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -652,6 +652,42 @@
                         <outletCollection property="subjectCells" destination="Azr-mC-vMg" collectionClass="NSMutableArray" id="gGB-SN-lrx"/>
                         <outletCollection property="creditButtons" destination="ShF-Gj-En5" collectionClass="NSMutableArray" id="wEx-eb-hdf"/>
                         <outletCollection property="subjectCells" destination="M2q-zF-Rky" collectionClass="NSMutableArray" id="Hwr-st-yOd"/>
+                        <outletCollection property="subjectCells" destination="5gD-IM-Cnw" collectionClass="NSMutableArray" id="SuT-IL-IKg"/>
+                        <outletCollection property="subjectCells" destination="lyn-zv-e12" collectionClass="NSMutableArray" id="Amz-ca-d4S"/>
+                        <outletCollection property="subjectCells" destination="5fn-nG-Bcb" collectionClass="NSMutableArray" id="Jl3-gs-buR"/>
+                        <outletCollection property="subjectCells" destination="vbM-FD-QXm" collectionClass="NSMutableArray" id="2LR-7Y-zhw"/>
+                        <outletCollection property="subjectCells" destination="v19-v8-Nxz" collectionClass="NSMutableArray" id="mwr-vH-l0a"/>
+                        <outletCollection property="subjectCells" destination="f7I-dj-Muz" collectionClass="NSMutableArray" id="HU3-L6-Xdc"/>
+                        <outletCollection property="subjectCells" destination="CVk-6E-ulb" collectionClass="NSMutableArray" id="oWc-UL-uU1"/>
+                        <outletCollection property="subjectCells" destination="CFA-ts-qa0" collectionClass="NSMutableArray" id="a9V-PN-3WF"/>
+                        <outletCollection property="subjectCells" destination="Peg-qv-4aR" collectionClass="NSMutableArray" id="YDB-z5-LIq"/>
+                        <outletCollection property="subjectCells" destination="EWF-WC-2n1" collectionClass="NSMutableArray" id="qSD-Pg-Bul"/>
+                        <outletCollection property="subjectCells" destination="HNa-ok-lT1" collectionClass="NSMutableArray" id="zh3-pt-qBg"/>
+                        <outletCollection property="subjectCells" destination="bcg-VN-gsH" collectionClass="NSMutableArray" id="gGf-Bv-JUH"/>
+                        <outletCollection property="rankButtons" destination="a4e-UX-CZq" collectionClass="NSMutableArray" id="nEU-hD-Xxt"/>
+                        <outletCollection property="rankButtons" destination="xXo-Ed-j6e" collectionClass="NSMutableArray" id="Ryt-sa-cwU"/>
+                        <outletCollection property="rankButtons" destination="TTf-8K-7xy" collectionClass="NSMutableArray" id="CCG-Zg-0Yq"/>
+                        <outletCollection property="rankButtons" destination="3nQ-hm-5Og" collectionClass="NSMutableArray" id="ZdR-o1-vc5"/>
+                        <outletCollection property="rankButtons" destination="9Jz-hW-f4C" collectionClass="NSMutableArray" id="pFd-Yc-gtr"/>
+                        <outletCollection property="rankButtons" destination="OEs-59-gdt" collectionClass="NSMutableArray" id="lza-Ce-uD5"/>
+                        <outletCollection property="rankButtons" destination="oQo-mu-cB7" collectionClass="NSMutableArray" id="due-RF-Ayc"/>
+                        <outletCollection property="rankButtons" destination="dyQ-jM-0zE" collectionClass="NSMutableArray" id="6l6-0s-y95"/>
+                        <outletCollection property="rankButtons" destination="eYj-D5-c0O" collectionClass="NSMutableArray" id="PNn-GI-7yP"/>
+                        <outletCollection property="rankButtons" destination="B3n-Wq-9ab" collectionClass="NSMutableArray" id="rph-ff-cU8"/>
+                        <outletCollection property="rankButtons" destination="6gJ-ZA-hk8" collectionClass="NSMutableArray" id="1JF-TJ-PCP"/>
+                        <outletCollection property="rankButtons" destination="r9s-LB-WEW" collectionClass="NSMutableArray" id="xhR-o9-7Kh"/>
+                        <outletCollection property="creditButtons" destination="KOc-Y1-oNt" collectionClass="NSMutableArray" id="zEL-7V-1T7"/>
+                        <outletCollection property="creditButtons" destination="Aku-sl-LhH" collectionClass="NSMutableArray" id="O8C-lQ-16O"/>
+                        <outletCollection property="creditButtons" destination="R0T-WL-BNx" collectionClass="NSMutableArray" id="83Z-0O-Hya"/>
+                        <outletCollection property="creditButtons" destination="wdd-cX-EOV" collectionClass="NSMutableArray" id="ksc-hN-sOY"/>
+                        <outletCollection property="creditButtons" destination="WQq-cf-6Uh" collectionClass="NSMutableArray" id="kfV-Xx-OYQ"/>
+                        <outletCollection property="creditButtons" destination="TdM-oS-JkI" collectionClass="NSMutableArray" id="0QY-S1-EjI"/>
+                        <outletCollection property="creditButtons" destination="EZ5-Bx-9xK" collectionClass="NSMutableArray" id="1jC-1R-k9k"/>
+                        <outletCollection property="creditButtons" destination="utx-1k-TR1" collectionClass="NSMutableArray" id="Zwa-1o-Wer"/>
+                        <outletCollection property="creditButtons" destination="tiK-OC-L20" collectionClass="NSMutableArray" id="Zmp-dv-0kA"/>
+                        <outletCollection property="creditButtons" destination="GoF-wC-EtQ" collectionClass="NSMutableArray" id="D9W-Gq-tZO"/>
+                        <outletCollection property="creditButtons" destination="Dqz-HJ-DZD" collectionClass="NSMutableArray" id="flx-un-kyo"/>
+                        <outletCollection property="creditButtons" destination="hdE-Dh-gMj" collectionClass="NSMutableArray" id="CHX-cx-97Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
