@@ -8,12 +8,20 @@
 
 import UIKit
 
-class GPACalculatorViewController: UIViewController {
+class GPACalculatorViewController: UIViewController, UIScrollViewDelegate {
     
-    @IBOutlet var rankButtons: [UIButton]!
-    @IBOutlet var creditButtons: [UIButton]!
+    // MARK: IB stuff
     @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet var subjectCells: [SubjectCellView]!
+    @IBOutlet weak var subjectsScrollView: UIScrollView! {
+        didSet {
+            subjectsScrollView.delegate = self
+            let contentSize = CGSize(width: subjectsScrollView.bounds.width, height: subjectsScrollView.bounds.height * Constants.contentSizeMultiplier)
+            subjectsScrollView.contentSize = contentSize
+        }
+    }
     
+    // MARK: - VC lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -32,4 +40,8 @@ class GPACalculatorViewController: UIViewController {
     }
     */
 
+    // MARK: - Constants
+    struct Constants {
+        static let contentSizeMultiplier = CGFloat(6)
+    }
 }

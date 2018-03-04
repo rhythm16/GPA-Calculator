@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,37 +28,51 @@
                                 <color key="textColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hTs-Eu-rpP">
-                                <rect key="frame" x="16" y="92" width="343" height="435"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTs-Eu-rpP">
+                                <rect key="frame" x="16" y="100" width="343" height="427"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Azr-mC-vMg" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="8" width="91" height="106"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Azr-mC-vMg" customClass="SubjectCellView" customModule="GPA_Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="64" y="64" width="106" height="123"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTH-nN-cSj">
-                                                <rect key="frame" x="30" y="15" width="30" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <state key="normal" title="F">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="touchRankButton:" destination="7mE-z9-TDg" eventType="touchUpInside" id="IBC-no-7yu"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pT-i6-4yv">
-                                                <rect key="frame" x="30" y="53" width="30" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <state key="normal" title="0">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iOJ-qa-uHN">
+                                                <rect key="frame" x="38" y="15" width="30" height="92"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTH-nN-cSj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="42"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="F">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="touchRankButton:" destination="7mE-z9-TDg" eventType="touchUpInside" id="IBC-no-7yu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pT-i6-4yv">
+                                                        <rect key="frame" x="0.0" y="50" width="30" height="42"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="iOJ-qa-uHN" firstAttribute="centerY" secondItem="Azr-mC-vMg" secondAttribute="centerY" id="5hU-s5-mgv"/>
+                                            <constraint firstItem="iOJ-qa-uHN" firstAttribute="top" secondItem="Azr-mC-vMg" secondAttribute="top" constant="15" id="EyO-RQ-9D6"/>
+                                            <constraint firstItem="iOJ-qa-uHN" firstAttribute="leading" secondItem="Azr-mC-vMg" secondAttribute="leading" constant="38" id="jac-in-Dpy"/>
+                                            <constraint firstItem="iOJ-qa-uHN" firstAttribute="centerX" secondItem="Azr-mC-vMg" secondAttribute="centerX" id="oLZ-pU-zaP"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.7741541188928307" green="0.91024332656656814" blue="0.94258779287338257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Azr-mC-vMg" secondAttribute="trailing" constant="229" id="GOz-u7-uuK"/>
+                                    <constraint firstAttribute="bottom" secondItem="Azr-mC-vMg" secondAttribute="bottom" constant="304" id="SVo-PZ-jUF"/>
+                                    <constraint firstItem="Azr-mC-vMg" firstAttribute="top" secondItem="hTs-Eu-rpP" secondAttribute="top" constant="64" id="Y5G-mk-VVK"/>
+                                    <constraint firstItem="Azr-mC-vMg" firstAttribute="leading" secondItem="hTs-Eu-rpP" secondAttribute="leading" constant="64" id="cPc-jw-sd0"/>
+                                </constraints>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hao-Gv-OzK">
                                 <rect key="frame" x="16" y="547" width="343" height="100"/>
@@ -85,9 +100,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="subjectsScrollView" destination="hTs-Eu-rpP" id="Loq-qI-6So"/>
                         <outlet property="topLabel" destination="ZuP-TQ-3rM" id="avd-nc-ThR"/>
-                        <outletCollection property="creditButtons" destination="2pT-i6-4yv" collectionClass="NSMutableArray" id="icX-a7-T3l"/>
-                        <outletCollection property="rankButtons" destination="dTH-nN-cSj" collectionClass="NSMutableArray" id="Hj8-AP-1GY"/>
+                        <outletCollection property="subjectCells" destination="Azr-mC-vMg" collectionClass="NSMutableArray" id="42j-DS-OFM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
