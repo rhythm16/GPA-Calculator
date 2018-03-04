@@ -21,11 +21,16 @@ class GPACalculatorViewController: UIViewController {
     @IBOutlet weak var topLabel: UILabel!
     
     @IBAction func touchRankButton(_ sender: UIButton) {
-        
+        print(getTheIndex(of: sender))
     }
     
     @IBAction func touchCreditButton(_ sender: UIButton) {
-        
+        print(getTheIndex(of: sender))
+    }
+    
+    //use this function carefully
+    func getTheIndex(of button: UIButton) -> Int {
+        return subjectCells.index(of: (button.superview!.superview!) as! SubjectCellView)!
     }
     
     override func viewDidLoad() {
