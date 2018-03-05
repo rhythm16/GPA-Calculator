@@ -45,15 +45,14 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="plusCell" id="cId-Ju-wsX" customClass="PlusCollectionViewCell" customModule="GPA_Calculator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="90"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="46"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ps8-9q-gZv">
-                                                    <rect key="frame" x="157" y="30" width="30" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ps8-9q-gZv">
+                                                    <rect key="frame" x="156" y="-7" width="30" height="60"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                     <state key="normal" title="+"/>
                                                     <connections>
@@ -64,25 +63,52 @@
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Ps8-9q-gZv" firstAttribute="centerX" secondItem="cId-Ju-wsX" secondAttribute="centerX" id="TgY-4y-I0s"/>
+                                            <constraint firstItem="Ps8-9q-gZv" firstAttribute="centerY" secondItem="cId-Ju-wsX" secondAttribute="centerY" id="WxC-uJ-dnd"/>
+                                        </constraints>
+                                        <size key="customSize" width="343" height="46"/>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="subjectCell" id="q5A-2H-TOJ" customClass="sujectCollectionViewCell" customModule="GPA_Calculator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="100" width="343" height="90"/>
+                                        <rect key="frame" x="0.0" y="56" width="343" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDx-n7-gcU">
-                                                    <rect key="frame" x="148" y="30" width="46" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <connections>
-                                                        <action selector="touchButton:" destination="q5A-2H-TOJ" eventType="touchUpInside" id="B43-1h-RhE"/>
-                                                    </connections>
-                                                </button>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="KWd-mc-x5y">
+                                                    <rect key="frame" x="61" y="30" width="253" height="71"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDx-n7-gcU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="86" height="48"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <connections>
+                                                                <action selector="touchButton:" destination="q5A-2H-TOJ" eventType="touchUpInside" id="B43-1h-RhE"/>
+                                                                <action selector="touchRankButton:" destination="q5A-2H-TOJ" eventType="touchUpInside" id="rBg-vS-o72"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hR4-xm-PZT">
+                                                            <rect key="frame" x="126" y="0.0" width="86" height="48"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <connections>
+                                                                <action selector="touchCreditButton:" destination="q5A-2H-TOJ" eventType="touchUpInside" id="4O7-lj-m4M"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="KWd-mc-x5y" firstAttribute="centerY" secondItem="q5A-2H-TOJ" secondAttribute="centerY" id="iF7-H5-uAW"/>
+                                            <constraint firstItem="KWd-mc-x5y" firstAttribute="centerX" secondItem="q5A-2H-TOJ" secondAttribute="centerX" id="zXx-FP-DaV"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="creditButton" destination="hR4-xm-PZT" id="9WJ-K8-hxU"/>
+                                            <outlet property="rankButton" destination="eDx-n7-gcU" id="hnt-vr-fEa"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
