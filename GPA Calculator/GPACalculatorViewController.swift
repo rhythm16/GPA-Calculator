@@ -33,7 +33,7 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
     @IBOutlet var pickerView: UIView!
     
     @IBAction func touchDone(_ sender: UIButton) {
-        
+        togglePickerView()
     }
     
     // MARK: - model
@@ -46,14 +46,14 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
-        case 0: return 1
-        case 1: return myCalculator.subjects.count
+        case 0: return myCalculator.subjects.count
+        case 1: return 1
         default: return 0
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if indexPath.section == 1 {
+        if indexPath.section == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "subjectCell", for: indexPath)
             return cell
         }
@@ -63,6 +63,17 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
         }
     }
     
+    // MARK: - helper funcs
+    func togglePickerView() {
+        for constraint in view.constraints {
+            if constraint.identifier == "bottomConstraint" {
+                constraint.constant = constraint.constant == Constants.pickerViewHeight ? Constants.pickerViewBottomOffset : Constants.pickerViewHeight
+            }
+        }
+        UIView.animate(withDuration: Constants.pickerViewAnimationDuration) {
+            self.view.layoutIfNeeded()
+        }
+    }
     
     // MARK: - VC lifecycle
     override func viewDidLoad() {
@@ -77,6 +88,7 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
         pickerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.pickerViewLeadingOffset).isActive = true
         pickerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -Constants.pickerViewLeadingOffset).isActive = true
         let bottomConstraint = pickerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: Constants.pickerViewHeight)
+        bottomConstraint.isActive = true
         bottomConstraint.identifier = "bottomConstraint"
         pickerView.layer.cornerRadius = Constants.pickerViewCornerRadius
     }
@@ -102,6 +114,8 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
         static let pickerViewCornerRadius = CGFloat(10)
         static let pickerViewHeight = CGFloat(128)
         static let pickerViewLeadingOffset = CGFloat(10)
+        static let pickerViewBottomOffset = CGFloat(-10)
+        static let pickerViewAnimationDuration = 0.5
     }
 
 }
