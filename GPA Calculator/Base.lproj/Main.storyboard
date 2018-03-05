@@ -38,30 +38,51 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77415411889999997" green="0.91024332659999996" blue="0.94258779290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qyl-nB-Uct">
-                                    <size key="itemSize" width="105" height="110"/>
+                                    <size key="itemSize" width="343" height="90"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="subjectCell" id="cId-Ju-wsX" customClass="sujectCollectionViewCell" customModule="GPA_Calculator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="105" height="110"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="plusCell" id="cId-Ju-wsX" customClass="PlusCollectionViewCell" customModule="GPA_Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="105" height="110"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ps8-9q-gZv">
-                                                    <rect key="frame" x="34" y="40" width="37" height="30"/>
+                                                    <rect key="frame" x="157" y="30" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="TEST"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <state key="normal" title="+"/>
                                                     <connections>
-                                                        <action selector="touchTEST:" destination="cId-Ju-wsX" eventType="touchUpInside" id="HOh-Sx-tiv"/>
+                                                        <action selector="touchPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="87T-c9-U3E"/>
+                                                        <action selector="touchTEST:" destination="cId-Ju-wsX" eventType="touchUpInside" id="652-0Q-tzD"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="subjectCell" id="q5A-2H-TOJ" customClass="sujectCollectionViewCell" customModule="GPA_Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="343" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDx-n7-gcU">
+                                                    <rect key="frame" x="148" y="30" width="46" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="touchButton:" destination="q5A-2H-TOJ" eventType="touchUpInside" id="B43-1h-RhE"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

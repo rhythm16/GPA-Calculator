@@ -18,6 +18,11 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
             subjectsCollectionView.delegate = self
         }
     }
+    @IBAction func touchPlus(_ sender: UIButton) {
+        myCalculator.subjects.append(GPACalculator.Subject(rank: "F", grade: 0, credit: 0))
+        subjectsCollectionView.reloadData()
+    }
+    
     @IBOutlet weak var bottomLabel: UILabel!
     
     // MARK: - model
@@ -25,35 +30,39 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
     
     // MARK: - collectionViewDataSource/Delegate funcs
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        //return 2
-        return 1
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        switch section {
-//        case 0: return 1
-//        case 1: return myCalculator.subjects.count
-//        default: return 0
-//        }
-        return myCalculator.subjects.count
+        switch section {
+        case 0: return 1
+        case 1: return myCalculator.subjects.count
+        default: return 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "subjectCell", for: indexPath)
-        return cell
+        if indexPath.section == 1 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "subjectCell", for: indexPath)
+            return cell
+        }
+        else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "plusCell", for: indexPath)
+            return cell
+        }
     }
     
     
     // MARK: - VC lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        let fiveSubjects = [GPACalculator.Subject(rank: "F", grade: 0, credit: 0),
-                            GPACalculator.Subject(rank: "F", grade: 0, credit: 0),
-                            GPACalculator.Subject(rank: "F", grade: 0, credit: 0),
-                            GPACalculator.Subject(rank: "F", grade: 0, credit: 0),
-                            GPACalculator.Subject(rank: "F", grade: 0, credit: 0)]
-        myCalculator.subjects += fiveSubjects
-        
+//        let fiveSubjects = [GPACalculator.Subject(rank: "F", grade: 0, credit: 0),
+//                            GPACalculator.Subject(rank: "F", grade: 0, credit: 0),
+//                            GPACalculator.Subject(rank: "F", grade: 0, credit: 0),
+//                            GPACalculator.Subject(rank: "F", grade: 0, credit: 0),
+//                            GPACalculator.Subject(rank: "F", grade: 0, credit: 0)]
+//        myCalculator.subjects += fiveSubjects
+//        myCalculator.subjects += fiveSubjects
     }
 
     override func didReceiveMemoryWarning() {
