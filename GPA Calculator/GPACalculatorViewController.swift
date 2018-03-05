@@ -23,7 +23,12 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
         subjectsCollectionView.reloadData()
     }
     
-    @IBOutlet weak var bottomLabel: UILabel!
+    @IBOutlet weak var bottomLabel: UILabel! {
+        didSet {
+            bottomLabel.layer.cornerRadius = Constants.bottomLabelCornerRadius
+            bottomLabel.clipsToBounds = true
+        }
+    }
     
     // MARK: - model
     var myCalculator = GPACalculator()
@@ -79,5 +84,10 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: - Constants
+    struct Constants {
+        static let bottomLabelCornerRadius = CGFloat(20)
+    }
 
 }
