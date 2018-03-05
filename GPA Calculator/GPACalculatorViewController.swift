@@ -19,7 +19,7 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
         }
     }
     @IBAction func touchPlus(_ sender: UIButton) {
-        myCalculator.subjects.append(GPACalculator.Subject(rank: "F", grade: 0, credit: 0))
+        myCalculator.subjects.append(GPACalculator.Subject(rank: .F, credit: 0))
         subjectsCollectionView.reloadData()
     }
     
@@ -61,13 +61,6 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
     // MARK: - VC lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let fiveSubjects = [GPACalculator.Subject(rank: "F", grade: 0, credit: 0),
-//                            GPACalculator.Subject(rank: "F", grade: 0, credit: 0),
-//                            GPACalculator.Subject(rank: "F", grade: 0, credit: 0),
-//                            GPACalculator.Subject(rank: "F", grade: 0, credit: 0),
-//                            GPACalculator.Subject(rank: "F", grade: 0, credit: 0)]
-//        myCalculator.subjects += fiveSubjects
-//        myCalculator.subjects += fiveSubjects
     }
 
     override func didReceiveMemoryWarning() {

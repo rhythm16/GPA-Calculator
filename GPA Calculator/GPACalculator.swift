@@ -11,13 +11,37 @@ import Foundation
 class GPACalculator {
     
     struct Subject {
-        var rank = "F"
-        var grade = Double(0)
+        enum Rank {
+            case Aplus
+            case A
+            case Aminus
+            case Bplus
+            case B
+            case Bminus
+            case Cplus
+            case C
+            case Cminus
+            case F
+        }
+        var rank = Rank.F
+        var grade: Double {
+            switch rank {
+            case .Aplus: return 4.3
+            case .A: return 4.0
+            case .Aminus: return 3.7
+            case .Bplus: return 3.3
+            case .B: return 3.0
+            case .Bminus: return 2.7
+            case .Cplus: return 2.3
+            case .C: return 2.0
+            case .Cminus: return 1.7
+            case .F: return 0.0
+            }
+        }
         var credit = 0
         
-        init (rank: String, grade: Double, credit: Int) {
-            self.rank = rank
-            self.grade = grade
+        init (rank: Rank, credit: Int) {
+            self.rank = .F
             self.credit = credit
         }
     }
