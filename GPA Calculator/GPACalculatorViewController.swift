@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GPACalculatorViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class GPACalculatorViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, SubjectCollectionViewCellDelegate {
     
     // MARK: - IB stuff
     @IBOutlet weak var topLabel: UILabel!
@@ -21,6 +21,11 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
     @IBAction func touchPlus(_ sender: UIButton) {
         myCalculator.subjects.append(GPACalculator.Subject(rank: .F, credit: 0))
         subjectsCollectionView.reloadData()
+//        for cell in subjectsCollectionView.visibleCells {
+//            if let ccell = cell as? SujectCollectionViewCell {
+//                ccell.delegate = self
+//            }
+//        }
     }
     
     @IBOutlet weak var bottomLabel: UILabel! {
@@ -61,6 +66,15 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "plusCell", for: indexPath)
             return cell
         }
+    }
+    
+    // MARK: - SubjectCollectionViewCellDelegate
+    func touchedRankButton() {
+        togglePickerView()
+    }
+    
+    func touchedCreditButton() {
+        togglePickerView()
     }
     
     // MARK: - helper funcs

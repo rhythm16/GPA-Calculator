@@ -10,6 +10,8 @@ import UIKit
 
 class SujectCollectionViewCell: UICollectionViewCell {
     
+    weak var delegate: SubjectCollectionViewCellDelegate?
+    
     @IBOutlet weak var rankButton: UIButton! {
         didSet {
             rankButton.setTitle("rank", for: .normal)
@@ -21,10 +23,15 @@ class SujectCollectionViewCell: UICollectionViewCell {
         }
     }
     @IBAction func touchRankButton(_ sender: UIButton) {
-        
+        //delegate?.touchedRankButton()
     }
     
     @IBAction func touchCreditButton(_ sender: UIButton) {
-        
+        //delegate?.touchedCreditButton()
     }
+}
+
+protocol SubjectCollectionViewCellDelegate: class {
+    func touchedRankButton()
+    func touchedCreditButton()
 }
