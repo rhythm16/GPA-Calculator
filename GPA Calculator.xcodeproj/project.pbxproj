@@ -14,6 +14,7 @@
 		65982F6E204BC1370032C520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65982F6C204BC1370032C520 /* LaunchScreen.storyboard */; };
 		65982F7A204BC1E70032C520 /* GPACalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65982F79204BC1E70032C520 /* GPACalculator.swift */; };
 		65982F7C204BC4C10032C520 /* GPACalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65982F7B204BC4C10032C520 /* GPACalculatorViewController.swift */; };
+		65982F80204CEF400032C520 /* sujectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65982F7F204CEF400032C520 /* sujectCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		65982F6F204BC1370032C520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65982F79204BC1E70032C520 /* GPACalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPACalculator.swift; sourceTree = "<group>"; };
 		65982F7B204BC4C10032C520 /* GPACalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPACalculatorViewController.swift; sourceTree = "<group>"; };
+		65982F7F204CEF400032C520 /* sujectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sujectCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				65982F79204BC1E70032C520 /* GPACalculator.swift */,
 				65982F60204BC1370032C520 /* AppDelegate.swift */,
 				65982F64204BC1370032C520 /* Main.storyboard */,
+				65982F7F204CEF400032C520 /* sujectCollectionViewCell.swift */,
 				65982F6A204BC1370032C520 /* Assets.xcassets */,
 				65982F6C204BC1370032C520 /* LaunchScreen.storyboard */,
 				65982F6F204BC1370032C520 /* Info.plist */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65982F7A204BC1E70032C520 /* GPACalculator.swift in Sources */,
+				65982F80204CEF400032C520 /* sujectCollectionViewCell.swift in Sources */,
 				65982F61204BC1370032C520 /* AppDelegate.swift in Sources */,
 				65982F69204BC1370032C520 /* GPA_Calculator.xcdatamodeld in Sources */,
 				65982F7C204BC4C10032C520 /* GPACalculatorViewController.swift in Sources */,
