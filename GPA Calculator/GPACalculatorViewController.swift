@@ -32,6 +32,10 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
     
     @IBOutlet var pickerView: UIView!
     
+    @IBAction func touchDone(_ sender: UIButton) {
+        
+    }
+    
     // MARK: - model
     var myCalculator = GPACalculator()
     
@@ -64,6 +68,18 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.addSubview(pickerView)
+        pickerView.translatesAutoresizingMaskIntoConstraints = false
+        pickerView.heightAnchor.constraint(equalToConstant: Constants.pickerViewHeight).isActive = true
+        pickerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.pickerViewLeadingOffset).isActive = true
+        pickerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -Constants.pickerViewLeadingOffset).isActive = true
+        let bottomConstraint = pickerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: Constants.pickerViewHeight)
+        bottomConstraint.identifier = "bottomConstraint"
+        pickerView.layer.cornerRadius = Constants.pickerViewCornerRadius
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -83,6 +99,9 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
     // MARK: - Constants
     struct Constants {
         static let bottomLabelCornerRadius = CGFloat(20)
+        static let pickerViewCornerRadius = CGFloat(10)
+        static let pickerViewHeight = CGFloat(128)
+        static let pickerViewLeadingOffset = CGFloat(10)
     }
 
 }
