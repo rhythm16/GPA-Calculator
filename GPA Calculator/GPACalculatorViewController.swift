@@ -30,6 +30,8 @@ class GPACalculatorViewController: UIViewController, UICollectionViewDataSource,
         }
     }
     
+    @IBOutlet var pickerView: UIView!
+    
     // MARK: - model
     var myCalculator = GPACalculator()
     

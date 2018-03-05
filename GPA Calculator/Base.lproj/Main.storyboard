@@ -118,11 +118,35 @@
                     </view>
                     <connections>
                         <outlet property="bottomLabel" destination="lmK-7H-ceF" id="29w-Bf-Xfl"/>
+                        <outlet property="pickerView" destination="Gi0-2M-ewO" id="z31-p8-R0e"/>
                         <outlet property="subjectsCollectionView" destination="EIs-vh-9zk" id="rR8-jE-gSU"/>
                         <outlet property="topLabel" destination="X4M-78-wID" id="PDH-oQ-5R6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Gi0-2M-ewO">
+                    <rect key="frame" x="0.0" y="0.0" width="290" height="146"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-rv-EA8">
+                            <rect key="frame" x="0.0" y="30" width="290" height="131"/>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxw-qj-JsU">
+                            <rect key="frame" x="248" y="5" width="37" height="30"/>
+                            <state key="normal" title="Done"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Zhg-rv-EA8" firstAttribute="bottom" secondItem="cju-FO-7DV" secondAttribute="bottom" constant="15" id="84s-bM-E43"/>
+                        <constraint firstItem="Zhg-rv-EA8" firstAttribute="trailing" secondItem="cju-FO-7DV" secondAttribute="trailing" id="EZF-Ra-BJu"/>
+                        <constraint firstItem="kxw-qj-JsU" firstAttribute="top" secondItem="cju-FO-7DV" secondAttribute="top" constant="5" id="Izt-QT-2SR"/>
+                        <constraint firstItem="cju-FO-7DV" firstAttribute="trailing" secondItem="kxw-qj-JsU" secondAttribute="trailing" constant="5" id="agC-HY-OdF"/>
+                        <constraint firstItem="Zhg-rv-EA8" firstAttribute="leading" secondItem="cju-FO-7DV" secondAttribute="leading" id="bfe-zb-eDw"/>
+                        <constraint firstItem="Zhg-rv-EA8" firstAttribute="top" secondItem="cju-FO-7DV" secondAttribute="top" constant="30" id="zqB-Bm-e59"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="cju-FO-7DV"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
